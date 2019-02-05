@@ -6,7 +6,6 @@ dashboardPage(
   # Header
   dashboardHeader( title = "Vaccines"),
 
-
   # Sidebar
   dashboardSidebar(
     sidebarMenu(
@@ -55,6 +54,8 @@ dashboardPage(
         )
       ),
 
+
+
       # ------ SECOND TAB = HEATMAP
       tabItem(tabName = "heatmap",
         highchartOutput("plot_heatmap", height = 640)
@@ -72,7 +73,7 @@ dashboardPage(
           box(
             h2("Code"),
             "Code is fully available on",
-            a(href="", "github")
+            a(href="https://github.com/holtzy/Vaccine-Exploration", "github")
           ),
           box(
             h2("Contact"),

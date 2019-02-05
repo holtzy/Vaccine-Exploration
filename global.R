@@ -3,24 +3,19 @@ library(shinydashboard)
 library(highcharter)
 data("vaccines")
 library(ggplot2)
-library(plotly)
 library(dplyr)
 library("viridis")
 library(leaflet)
 library(hrbrthemes)
-library(maps)           # To get us states shape
 library(rgdal)
 
 # rename dataset
 data <- vaccines
 
 
-
-
 # ---------- #
 # MAP OBJECT PREPARATION
 # Load shape file of US state + merge with vaccines values
-# Save at .R format for quick load
 # ---------- #
 
 # Note: US states data found here. And saved in the DATA folder.

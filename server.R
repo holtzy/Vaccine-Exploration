@@ -37,7 +37,7 @@ function(input, output) {
           layerId = ~NAME,
           fillColor = ~mypalette(count), stroke=TRUE, fillOpacity = 0.9, color="white", weight=0.3,
           highlight = highlightOptions( weight = 5, color = "black", dashArray = "", fillOpacity = 0.8, bringToFront = TRUE),
-          label = ~NAME,
+          label = ~mytext,
           labelOptions = labelOptions( style = list("font-weight" = "normal", padding = "3px 8px"), textsize = "13px", direction = "auto")
         ) %>%
         addLegend( pal=mypalette, values=range(data$count, na.rm=T), opacity=0.9, title = "# infected people", position = "bottomleft" )
@@ -127,10 +127,14 @@ function(input, output) {
     return(myMin)
   })
 
+
+
+
   # --------------------#
   # --- HEATMAP
   # --------------------#
 
+  # Disclaimer: comes from the highcharter webpage
   output$plot_heatmap <- renderHighchart({
 
     fntltp <- JS("function(){

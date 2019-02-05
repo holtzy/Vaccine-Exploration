@@ -1,21 +1,21 @@
 Vaccination impact in the US
 ===================
 
---> [online application](https://holtzyan.shinyapps.io/the-nb-como-project/)
+--> [online application](https://holtzyan.shinyapps.io/Vaccine/)
 
 
 Overview
 --------
 A very tiny shiny application allowing to explore the impact of vaccination in the US between 1928 and 2003.
 
-I built this application as a demo of my shiny skill for a Job Interview. The time limit was 1h, what explain all the imperfections you will find in the app.
+I built this application as a demo of my shiny skill for a Job Interview. The time limit was 1h, what explains all the imperfections you will find in the app.
 
 
 
 
 How to use the application
 --------
-The best way to use this application is via its [online version](https://holtzyan.shinyapps.io/the-nb-como-project/).
+The best way to use this application is via its [online version](https://holtzyan.shinyapps.io/Vaccine/).
 
 If you really want to use this application locally you can:
 
